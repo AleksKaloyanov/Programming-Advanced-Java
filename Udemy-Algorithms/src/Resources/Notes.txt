@@ -1,0 +1,93 @@
+            1.Algorithm - Set of rules for a computer program to accomplish a Task
+------------------------------------------------------------------------------------------------
+Data structure - Different ways of organizing data on your computer, that can be used effectively.
+
+                                            2.Types of Data Structures:
+
+    -Primitive - Built-in in any programming language
+        1.Integer
+        2.Float
+        3.Character
+        4.Boolean
+
+    -Non-Primitive - Defined by the developers
+        1.Linear
+            -Static
+                1.Array
+            -Dynamic
+                1.Linked List
+                2.Stack - Works perfectly when you have forward and backward buttons in you app
+                due to its FILO nature
+                3.Queue
+        2.Non-Linear
+            1.Tree
+            2.Graph - Works perfectly for maps (Google Maps, Microsoft maps, etc.)
+------------------------------------------------------------------------------------------------
+                                            3.Types of Algorithms
+
+    -Simple recursive algorithms - An algorithm that calls itself recursively
+    -Divide and conquer algorithms:
+        (-  Divide the problem into smaller sub-problems of the same type, and solve these
+        sub-problems recursively;
+         -   Combine the solutions to the sub-problems into a solution of the original problem.
+         Ex. - Quick sort and merge sort)
+    -Dynamic programming algorithms:
+        (-  They work based on memorization (remember past results and use them to find new result)
+         -  The goal is to find the best solution among multiple solutions)
+    -Greedy algorithms:
+        (-  We take the best path we can without worrying about future consequences;
+         -  We hope that by choosing a local optimum solution at each step, we'll end up at a global
+         optimum solution)
+    -Brute force algorithms:
+        -   It tries all possibilities until a satisfactory solution is found
+        Ex. - Finding the best path between two locations.
+    -Randomized algorithms:
+        -   Use a Random number at least once during the compilation to make a decision.
+------------------------------------------------------------------------------------------------
+Big O - The language and metric we use to describe the efficiency of algorithms
+Time Complexity - A way of showing how the runtime of a function increases as the size of input increases
+
+Best case - Greek letter Omega
+Average case - Greek letter Theta
+Worst Case - Big O - The one we should be always looking at
+------------------------------------------------------------------------------------------------
+                                          4.Runtime Complexities
+
+Complexity |    Name    |   Sample
+O(1)    -    Constant   -  A simple add numbers function
+O(n)    -    Linear     -  Loop through numbers from 1 to n
+O(Log n)-    Logarithmic-  Find an element in sorted array
+O(n^2)  -    Quadratic  -  Nested Loops
+
+O(1) - For any given time, the execution time will not change
+
+O(N) - The complexity grows in direct proportion to the size of input data
+        (As the elements increase,
+   -The best practice is to try to keep our functions below or within this range of complexity
+
+* log2^8 = 3 == 2^3=8 *
+
+if the algorithm is in the form:
+    1. Do this, then when you are all done, do that - ADD the runtimes == O(A+B)
+    2. Do this for each time you do that - MULTIPLY the runtimes == O(A*B)
+------------------------------------------------------------------------------------------------
+                                    5.Rules to measure Big O for Code
+
+Rule 1  -   Any assignment statements and if statements are executed once regardless of the size
+            of the problem == O(1)
+Rule 2  -   A simple "for" loop from 0 to n (with no internal loops) == O(n)
+Rule 3  -   A nested loop of the same type takes quadratic time complexity == O(n^2)
+Rule 4  -   A loop, in which the controlling parameter is divided by two at each step == o(log n)
+Rule 5  -   When dealing with multiple statements, just add them up
+------------------------------------------------------------------------------------------------
+                                    6.When to use/avoid Arrays
+
+1.  When to use
+    -   To store multiple variables of same data type;
+    -   Random access - Accessing any cell is time efficient - O(1)
+2.  When to avoid
+    -   Same data type elements - limitation
+    -   Reserve memory - To make the array bigger, we need to create a new one and move all the
+        elements to the new array - Which is a time-consuming operation
+    -   When we need to write space-efficient software
+------------------------------------------------------------------------------------------------
